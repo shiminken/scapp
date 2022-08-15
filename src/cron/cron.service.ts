@@ -29,16 +29,6 @@ export class CronService {
         );
 
         const memberNameInfos = [];
-
-        console.log(
-          'memberNameInfos',
-          memberNameInfos.length,
-          remainingMembers,
-        );
-        // if (memberNameInfos.length === 0) {
-        //   const content = 'I have nothing todo today. Good job guys!';
-        //   this.slackService.sendMessageToSlack(content).subscribe();
-        // }
         remainingMembers?.map((item) => {
           if (item !== undefined && typeof item === 'string') {
             forkJoin([this.slackService.getMemberInfos(item)]).subscribe(
