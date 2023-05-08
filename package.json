@@ -28,6 +28,7 @@
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/schedule": "^2.1.0",
+    "@slack/web-api": "^6.8.1",
     "@types/cron": "^2.0.0",
     "@types/hapi__joi": "^17.1.8",
     "class-validator": "^0.13.2",

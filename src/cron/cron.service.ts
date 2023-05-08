@@ -11,7 +11,7 @@ export class CronService {
   private readonly logger = new Logger(CronService.name);
 
   // @Cron('0 45 16 * * 1-5')
-  @Cron('*/10 * * * * *')
+  // @Cron('*/10 * * * * *')
   runEvery10Seconds() {
     console.log('Every 1 seconds');
     this.slackService.getDailyHistory().subscribe((r1) => {
